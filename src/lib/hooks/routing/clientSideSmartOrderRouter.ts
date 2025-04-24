@@ -7,7 +7,7 @@ import {
   AlphaRouterConfig,
   OnChainQuoteProvider,
   UniswapMulticallProvider,
-} from '@uniswap/smart-order-router'
+} from '@zentraswap/smart-order-router'
 import { asSupportedChain } from 'constants/chains'
 import { RPC_PROVIDERS } from 'constants/providers'
 import { nativeOnChain } from 'constants/tokens'
