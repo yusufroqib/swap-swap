@@ -1,4 +1,4 @@
-import { MixedRouteSDK, ONE, Trade } from '@uniswap/router-sdk'
+import { MixedRouteSDK, ONE, Trade } from '@zentraswap/router-sdk'
 import { ChainId, Currency, CurrencyAmount, Fraction, Percent, Price, Token, TradeType } from '@zentraswap/sdk-core'
 import { Route as V2Route } from '@zentraswap/v2-sdk'
 import { Route as V3Route } from '@zentraswap/v3-sdk'

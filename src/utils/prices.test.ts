@@ -1,4 +1,4 @@
-import { Trade } from '@uniswap/router-sdk'
+import { Trade } from '@zentraswap/router-sdk'
 import { CurrencyAmount, Percent, TradeType } from '@zentraswap/sdk-core'
 import { Pair, Route as V2Route } from '@zentraswap/v2-sdk'
 import { Route as V3Route } from '@zentraswap/v3-sdk'

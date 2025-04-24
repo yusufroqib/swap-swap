@@ -1,4 +1,4 @@
-import { Protocol } from '@uniswap/router-sdk'
+import { Protocol } from '@zentraswap/router-sdk'
 import { Currency, Percent, TradeType } from '@zentraswap/sdk-core'
 import { Pair } from '@zentraswap/v2-sdk'
 import { FeeAmount } from '@zentraswap/v3-sdk'

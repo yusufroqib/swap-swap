@@ -1,4 +1,4 @@
-import { Protocol } from '@uniswap/router-sdk'
+import { Protocol } from '@zentraswap/router-sdk'
 import { Currency, Percent } from '@zentraswap/sdk-core'
 import { FeeAmount } from '@zentraswap/v3-sdk'
 import { DAI, USDC_MAINNET, WBTC } from 'constants/tokens'

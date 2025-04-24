@@ -1,5 +1,5 @@
 import type { JsonRpcProvider } from '@ethersproject/providers'
-import { MixedRouteSDK } from '@uniswap/router-sdk'
+import { MixedRouteSDK } from '@zentraswap/router-sdk'
 import { Currency, CurrencyAmount, Token } from '@zentraswap/sdk-core'
 import { Pair, Route as V2Route } from '@zentraswap/v2-sdk'
 import { FeeAmount, Pool, Route as V3Route } from '@zentraswap/v3-sdk'

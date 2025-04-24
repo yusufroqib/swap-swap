@@ -1,5 +1,5 @@
 import type { Web3Provider } from '@ethersproject/providers'
-import { Protocol } from '@uniswap/router-sdk'
+import { Protocol } from '@zentraswap/router-sdk'
 import { getClientSideQuote, getRouter } from 'lib/hooks/routing/clientSideSmartOrderRouter'
 
 import { ClassicTrade, GetQuoteArgs, QuoteMethod, QuoteResult, QuoteState, TradeResult } from './types'
