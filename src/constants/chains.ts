@@ -47,7 +47,7 @@ export const SUPPORTED_GAS_ESTIMATE_CHAIN_IDS = [
 /**
  * Supported networks for V2 pool behavior.
  */
-export const SUPPORTED_V2POOL_CHAIN_IDS = [ChainId.MAINNET, ChainId.GOERLI] as const
+export const SUPPORTED_V2POOL_CHAIN_IDS = [ChainId.MAINNET, ChainId.GOERLI, ChainId.PHAROS_DEVNET] as const
 
 export const TESTNET_CHAIN_IDS = [
   ChainId.GOERLI,
@@ -98,10 +98,10 @@ export type SupportedL2ChainId = (typeof L2_CHAIN_IDS)[number]
  */
 export function getChainPriority(chainId: ChainId): number {
   switch (chainId) {
+    case ChainId.PHAROS_DEVNET:
     case ChainId.MAINNET:
     case ChainId.GOERLI:
     case ChainId.SEPOLIA:
-    case ChainId.PHAROS_DEVNET:
       return 0
     case ChainId.ARBITRUM_ONE:
     case ChainId.ARBITRUM_GOERLI:
