@@ -93,7 +93,7 @@ type SwapInfo = {
   autoSlippage: Percent
 }
 
-// from the current swap inputs, compute the best trade and return it.
+// from the current swap inputs, compute the best trade and return it. //@note 
 export function useDerivedSwapInfo(state: SwapState, chainId: ChainId | undefined): SwapInfo {
   const { account } = useWeb3React()
 

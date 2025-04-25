@@ -70,7 +70,7 @@ export function useDebouncedTrade(
   const skipBothFetches = !autoRouterSupported || isWrap
   const skipRoutingFetch = skipBothFetches || isDebouncing
 
-  const routingApiTradeResult = useRoutingAPITrade(
+  const routingApiTradeResult = useRoutingAPITrade( //@note
     skipRoutingFetch,
     tradeType,
     amountSpecified,

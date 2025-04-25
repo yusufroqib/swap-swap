@@ -5913,10 +5913,10 @@
     tiny-invariant "^1.1.0"
     toformat "^2.0.0"
 
-"@zentraswap/smart-order-router@^3.15.1":
-  version "3.15.1"
-  resolved "https://registry.yarnpkg.com/@zentraswap/smart-order-router/-/smart-order-router-3.15.1.tgz#4c868e1288b7bab2dea84e90ac68a8fa8735d2ab"
-  integrity sha512-7ipGflXevj5amroAleFOq3I1Smqd3KadEgEl+CtQ1mtjdgtD5peyOPhYGvlwv+WG8pCvsipFKQpm+NHNNZMbPw==
+"@zentraswap/smart-order-router@^3.15.3":
+  version "3.15.3"
+  resolved "https://registry.yarnpkg.com/@zentraswap/smart-order-router/-/smart-order-router-3.15.3.tgz#a139b42f047f184a04b05d0fe4ec38f826823ddf"
+  integrity sha512-wxz6PohdH/SgF8uF+E+TFqUfoc/FZF0cvx7vdkoxYPQ9Cf8rOd+va3+UPqMEX6Fg7WBlSRLvXg1FCqWamHuryg==
   dependencies:
     "@uniswap/default-token-list" "^11.2.0"
     "@uniswap/permit2-sdk" "^1.2.0"

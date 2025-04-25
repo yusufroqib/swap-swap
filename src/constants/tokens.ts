@@ -249,6 +249,13 @@ export const DAI_AVALANCHE = new Token(
   'DAI.e',
   'Dai.e Token'
 )
+export const PUSD_PHAROS_DEVNET = new Token(
+  ChainId.PHAROS_DEVNET,
+  '0xDD3e93EEB897f0fb091cD31462e9752b60587D0D',
+  18,
+  'PUSD',
+  'Pharos USD'
+)
 
 export const UNI: { [chainId: number]: Token } = {
   [ChainId.MAINNET]: new Token(ChainId.MAINNET, UNI_ADDRESSES[ChainId.MAINNET], 18, 'UNI', 'Uniswap'),
@@ -503,5 +510,6 @@ export const TOKEN_SHORTHANDS: { [shorthand: string]: { [chainId in ChainId]?: s
     [ChainId.GOERLI]: USDC_GOERLI.address,
     [ChainId.SEPOLIA]: USDC_SEPOLIA.address,
     [ChainId.AVALANCHE]: USDC_AVALANCHE.address,
+    [ChainId.PHAROS_DEVNET]: PUSD_PHAROS_DEVNET.address,
   },
 }
