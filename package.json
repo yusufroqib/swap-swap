@@ -206,7 +206,7 @@
     "@web3-react/url": "^8.2.3",
     "@zentraswap/router-sdk": "^1.6.0",
     "@zentraswap/sdk-core": "^4.0.6",
-    "@zentraswap/smart-order-router": "^3.15.0",
+    "@zentraswap/smart-order-router": "^3.15.1",
     "@zentraswap/universal-router-sdk": "^1.5.9",
     "@zentraswap/v2-sdk": "^3.2.4",
     "@zentraswap/v3-sdk": "^3.10.1",
