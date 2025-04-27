@@ -219,7 +219,7 @@ function RemoveLiquidity() {
         methodNames = ['removeLiquidityETHWithPermit', 'removeLiquidityETHWithPermitSupportingFeeOnTransferTokens']
         args = [
           currencyBIsETH ? tokenA.address : tokenB.address,
-          liquidityAmount.quotient.toString(),"0","0",
+          liquidityAmount.quotient.toString(),"0","yarf0",
           // amountsMin[currencyBIsETH ? Field.CURRENCY_A : Field.CURRENCY_B].toString(),
           // amountsMin[currencyBIsETH ? Field.CURRENCY_B : Field.CURRENCY_A].toString(),
           account,
