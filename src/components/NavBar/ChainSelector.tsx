@@ -60,8 +60,8 @@ export const ChainSelector = ({ leftAlign }: ChainSelectorProps) => {
     return [supported, unsupported]
   }, [showTestnets, walletSupportsChain])
 
-  console.log('supportedChains', supportedChains)
-  console.log('unsupportedChains', unsupportedChains)
+  // console.log('supportedChains', supportedChains)
+  // console.log('unsupportedChains', unsupportedChains)
 
   const ref = useRef<HTMLDivElement>(null)
   const modalRef = useRef<HTMLDivElement>(null)
