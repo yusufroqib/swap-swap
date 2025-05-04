@@ -2,7 +2,7 @@
 
 An open source interface for Uniswap -- a protocol for decentralized exchange of Ethereum tokens.
 
-<img src="screenshot.jpeg" style="width: 500px" />
+<img src="screenshot.png" style="width: 500px" />
 
 Check out Zentra via:
 - [https://2.zentra.eth.limo](https://2.zentra.eth.limo)
