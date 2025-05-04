@@ -92,13 +92,13 @@ const LogoSectionContent = () => {
   return (
     <>
       <SocialLinks>
-        <SocialLink href="https://discord.com/invite/aCSKcvf5VW" target="_blank" rel="noopener noreferrer">
+        {/* <SocialLink href="https://discord.com/invite/aCSKcvf5VW" target="_blank" rel="noopener noreferrer">
           <DiscordIcon size={32} />
         </SocialLink>
         <SocialLink href="https://twitter.com/DarkFlorist" target="_blank" rel="noopener noreferrer">
           <TwitterIcon size={32} />
-        </SocialLink>
-        <SocialLink href="https://github.com/DarkFlorist/Horswap" target="_blank" rel="noopener noreferrer">
+        </SocialLink> */}
+        <SocialLink href="https://github.com/zentra-fi/zentra" target="_blank" rel="noopener noreferrer">
           <GithubIcon size={32} />
         </SocialLink>
       </SocialLinks>
@@ -118,7 +118,7 @@ export const AboutFooter = () => {
           <LinkGroupTitle>App</LinkGroupTitle>
           <TextLink to="/swap">Swap</TextLink>
           <TextLink to="/pools">Pools</TextLink>
-          <TextLink to="/whatishorswap">What is Horswap?</TextLink>
+          <TextLink to="/whatiszentra">What is Zentra?</TextLink>
         </LinkGroup>
         <LinkGroup>
           <LinkGroupTitle>Protocol</LinkGroupTitle>

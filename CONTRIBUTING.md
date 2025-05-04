@@ -35,7 +35,7 @@ The last line of the output should say:
 added bafyb... export
 ```
 
-Given that you are hosting IPFS gateway at localhost:8081, you can then navigate to [bafyb....ipfs.localhost:8081] to interact with Horswap.
+Given that you are hosting IPFS gateway at localhost:8081, you can then navigate to [bafyb....ipfs.localhost:8081] to interact with Zentra
 
 ## Running unit tests
 

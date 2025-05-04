@@ -73,11 +73,11 @@ export const PageTabs = () => {
       <MenuItem href="/pools" dataTestId="pool-nav-link" isActive={isPoolActive}>
         <Trans>Pools</Trans>
       </MenuItem>
-      <Launchpad href="https://google.com" dataTestId="pool-nav-link" isActive={false}>
+      <Launchpad href="https://zentrafi.vercel.app/" dataTestId="pool-nav-link" isActive={false}>
         <Trans>Launchpad 🚀</Trans>
       </Launchpad>
-      <MenuItem href="/whatishorswap">
-        <Trans>What is Horswap?</Trans>
+      <MenuItem href="https://zentrafi.vercel.app/" dataTestId="pool-nav-link" isActive={false}>
+        <Trans>What is Zentra?</Trans>
       </MenuItem>
       <Box marginY="4">
         <MenuDropdown />
@@ -112,7 +112,7 @@ const Navbar = ({ blur }: { blur: boolean }) => {
               <HorIcon
                 width="48"
                 height="48"
-                data-testid="horswap-logo"
+                data-testid="zentra-logo"
                 className={styles.logo}
                 onClick={handleHorIconClick}
               />

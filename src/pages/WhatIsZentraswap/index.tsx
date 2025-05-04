@@ -69,7 +69,7 @@ Here are the significant changes:
 - Removed claim UNI tokens popup
 - Added docker building and deployment to IPFS
 
-You can see all the changes by [comparing Zentraswap to Uniswap Interface V4.266.2](https://github.com/Uniswap/interface/compare/v4.266.2...DarkFlorist:Zentraswap:main). You can also find the whole codebase in [GitHub](https://github.com/DarkFlorist/Zentraswap/).
+You can see all the changes by [comparing Zentraswap to Uniswap Interface V4.266.2](https://github.com/Uniswap/interface/compare/v4.266.2...DarkFlorist:Zentraswap:main). You can also find the whole codebase in [GitHub](https://github.com/zentra-fi/zentra).
 					`.replace(/[\n\r]/g, '\n')}
           />
         </MarkDownWrapper>
