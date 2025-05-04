@@ -2,7 +2,7 @@
 
 An open source interface for Uniswap -- a protocol for decentralized exchange of Ethereum tokens.
 
-<img src="screenshot.png" style="width: 500px" />
+<img src="screenshot.jpeg" style="width: 500px" />
 
 Check out Zentra via:
 - [https://2.zentra.eth.limo](https://2.zentra.eth.limo)
@@ -40,6 +40,7 @@ You can see all the changes by [comparing Zentra to Uniswap Interface V4.266.2](
 # Socials
 - Website: [dark.florist](https://www.dark.florist/)
 - Uniswap Docs: [uniswap.org/docs/](https://docs.uniswap.org/)
+
 - Uniswap Whitepapers:
   - V1 ipfs://bafybeihyq5jjttgmfdsonnbv73cshadkd3c3m3dptcrhqjeds6xij6rlim/ [dweb](https://bafybeihyq5jjttgmfdsonnbv73cshadkd3c3m3dptcrhqjeds6xij6rlim.ipfs.dweb.link/)
   - V2 ipfs://bafybeia5cxs72meianwphz2aq2tv5irpdgmkfniqsuhznl66s677zakgce/ [dweb](https://bafybeia5cxs72meianwphz2aq2tv5irpdgmkfniqsuhznl66s677zakgce.ipfs.dweb.link/)
