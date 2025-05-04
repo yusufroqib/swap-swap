@@ -57,7 +57,7 @@ COPY <<'EOF' /entrypoint.sh
 set -e
 
 if [ $# -ne  1 ]; then
-	echo "Example usage: docker run --rm ghcr.io/darkflorist/horswap:latest [docker-host|nft.storage]"
+	echo "Example usage: docker run --rm ghcr.io/darkflorist/Zentra:latest [docker-host|nft.storage]"
 	exit  1
 fi
 
@@ -110,7 +110,7 @@ case $1 in
 
 	*)
 		echo "Invalid option: $1"
-		echo "Example usage: docker run --rm ghcr.io/darkflorist/horswap:latest [docker-host|nft.storage]"
+		echo "Example usage: docker run --rm ghcr.io/darkflorist/Zentra:latest [docker-host|nft.storage]"
 		exit  1
 		;;
 esac

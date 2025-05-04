@@ -1,21 +1,21 @@
-# Horswap
+# Zentra
 
 An open source interface for Uniswap -- a protocol for decentralized exchange of Ethereum tokens.
 
 <img src="screenshot.png" style="width: 500px" />
 
-Check out Horswap via:
-- [https://2.horswap.eth.limo](https://2.horswap.eth.limo)
-- [ipns://2.horswap.eth](ipns://2.horswap.eth)
+Check out Zentra via:
+- [https://2.zentra.eth.limo](https://2.zentra.eth.limo)
+- [ipns://2.zentra.eth](ipns://2.zentra.eth)
 - [ipfs://bafybeibtdjzmhx77pxlpmy7fqnwyb7dmrtwbk3n6fpyw3qdgmxaznzwm44](ipfs://bafybeibtdjzmhx77pxlpmy7fqnwyb7dmrtwbk3n6fpyw3qdgmxaznzwm44)
 
-# Horswap is an improved Uniswap Interface
-Horswap is a fork of [Uniswap Interface v4.266.2](https://github.com/Uniswap/interface/releases/tag/v4.266.2). The version v4.266.2 is the last version without added UI fees and that would still allow users to do local routing. Horswap has then significantly improved the interface's censorship resistance and privacy.
+# Zentra is an improved Uniswap Interface
+Zentra is a fork of [Uniswap Interface v4.266.2](https://github.com/Uniswap/interface/releases/tag/v4.266.2). The version v4.266.2 is the last version without added UI fees and that would still allow users to do local routing. Zentra has then significantly improved the interface's censorship resistance and privacy.
 
-You can read about reasoning on why Horswap was built here: [https://listed.to/authors/33689/posts/49312](https://listed.to/authors/33689/posts/49312)
+You can read about reasoning on why Zentra was built here: [https://listed.to/authors/33689/posts/49312](https://listed.to/authors/33689/posts/49312)
 
 Here are the significant changes:
-- Changed Uniswap branding to Horswap branding
+- Changed Uniswap branding to Zentra branding
 - Removed Uniswap privacy policy
 - Removed all analytics queries (Uniswap interface is really noisy in reporting everything you do to their analytics system)
 - Removed support for wallet connect wallets (Unfortunately these require centralized server to function)
@@ -35,13 +35,11 @@ Here are the significant changes:
 - Removed claim UNI tokens popup
 - Added docker building and deployment to IPFS
 
-You can see all the changes by [comparing Horseswap to Uniswap Interface V4.266.2](https://github.com/Uniswap/interface/compare/v4.266.2...DarkFlorist:Horswap:main)
+You can see all the changes by [comparing Zentra to Uniswap Interface V4.266.2](https://github.com/Uniswap/interface/compare/v4.266.2...DarkFlorist:Zentra:main)
 
 # Socials
 - Website: [dark.florist](https://www.dark.florist/)
 - Uniswap Docs: [uniswap.org/docs/](https://docs.uniswap.org/)
-- Twitter: [@DarkFlorist](https://twitter.com/DarkFlorist)
-- Discord: [Dark Florists](https://discord.com/invite/aCSKcvf5VW)
 - Uniswap Whitepapers:
   - V1 ipfs://bafybeihyq5jjttgmfdsonnbv73cshadkd3c3m3dptcrhqjeds6xij6rlim/ [dweb](https://bafybeihyq5jjttgmfdsonnbv73cshadkd3c3m3dptcrhqjeds6xij6rlim.ipfs.dweb.link/)
   - V2 ipfs://bafybeia5cxs72meianwphz2aq2tv5irpdgmkfniqsuhznl66s677zakgce/ [dweb](https://bafybeia5cxs72meianwphz2aq2tv5irpdgmkfniqsuhznl66s677zakgce.ipfs.dweb.link/)
