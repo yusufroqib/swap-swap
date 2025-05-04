@@ -262,11 +262,11 @@ const CHAIN_INFO: ChainInfoMap = {
   [ChainId.PHAROS_DEVNET]: {
     networkType: NetworkType.L1,
     blockWaitMsBeforeWarning: ms(`25m`),
-    // bridge: 'https://bridge.base.org/deposit',
+    bridge: '',
     defaultListUrl: BASE_LIST,
     docs: 'https://pharosnetwork.gitbook.io/docs/',
     explorer: 'https://pharosscan.xyz/',
-    // infoLink: 'https://info.uniswap.org/#/base/',
+    infoLink: '',
     label: 'Pharos Devnet',
     logoUrl: baseLogo,
     circleLogoUrl: baseLogo,

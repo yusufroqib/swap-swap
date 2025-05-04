@@ -106,8 +106,8 @@ export const colors = {
   surface3_dark: '#FFFFFF12',
   surface4_dark: '#FFFFFF20',
   surface5_dark: '#00000004',
-  accent1_dark: '#139c3a',
-  accent2_dark: '#022b24',
+  accent1_dark: '#1a6bc2', // Changed from green to blue
+  accent2_dark: '#0a2240', // Changed from green to dark blue
   neutral1_light: '#222222',
   neutral2_light: '#7D7D7D',
   neutral3_light: '#CECECE',
@@ -116,9 +116,9 @@ export const colors = {
   surface3_light: '#22222212',
   surface4_light: '#FFFFFF64',
   surface5_light: '#00000004',
-  accent1_light: '#3dad5d',
-  accent2_light: '#d0ffdd',
-  success: '#40B66B',
+  accent1_light: '#3d7ead', // Changed from green to blue
+  accent2_light: '#d0e6ff', // Changed from green to light blue
+  success: '#4076B6', // Changed to a blue success color
   critical: '#FF5F52',
   scrim: 'rgba(0, 0, 0, 0.60)',
 }

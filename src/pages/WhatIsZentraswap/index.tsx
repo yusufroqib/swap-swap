@@ -33,23 +33,23 @@ const MarkDownWrapper = styled.div`
   overflow: hidden;
 `
 
-export default function WhatIsHorswap() {
+export default function WhatIsZentraswap() {
   const Title = useIsMobile() ? ThemedText.LargeHeader : ThemedText.Hero
   return (
     <PageWrapper>
       <Header>
-        <Container>
-          <Title>What is Horswap?</Title>
+        <Container> 
+          <Title>What is Zentraswap?</Title>
         </Container>
       </Header>
       <AutoColumn gap="md">
         <MarkDownWrapper>
           <ReactMarkdown
-            source={`# Horswap is an improved Uniswap Interface
-Horswap is a fork of [Uniswap Interface v4.266.2](https://github.com/Uniswap/interface/releases/tag/v4.266.2). The version v4.266.2 is the last version without added UI fees and that would still allow users to do local routing. Horswap has then significantly improved the interface's censorship resistance and privacy.
+            source={`# Zentraswap is an improved Uniswap Interface
+Zentraswap is a fork of [Uniswap Interface v4.266.2](https://github.com/Uniswap/interface/releases/tag/v4.266.2). The version v4.266.2 is the last version without added UI fees and that would still allow users to do local routing. Zentraswap has then significantly improved the interface's censorship resistance and privacy.
 
 Here are the significant changes:
-- Changed Uniswap branding to Horswap branding
+- Changed Uniswap branding to Zentraswap branding
 - Removed Uniswap privacy policy
 - Removed all analytics queries (Uniswap interface is really noisy in reporting everything you do to their analytics system)
 - Removed support for wallet connect wallets (Unfortunately these require centralized server to function)
@@ -69,7 +69,7 @@ Here are the significant changes:
 - Removed claim UNI tokens popup
 - Added docker building and deployment to IPFS
 
-You can see all the changes by [comparing Horswap to Uniswap Interface V4.266.2](https://github.com/Uniswap/interface/compare/v4.266.2...DarkFlorist:Horswap:main). You can also find the whole codebase in [GitHub](https://github.com/DarkFlorist/Horswap/).
+You can see all the changes by [comparing Zentraswap to Uniswap Interface V4.266.2](https://github.com/Uniswap/interface/compare/v4.266.2...DarkFlorist:Zentraswap:main). You can also find the whole codebase in [GitHub](https://github.com/DarkFlorist/Zentraswap/).
 					`.replace(/[\n\r]/g, '\n')}
           />
         </MarkDownWrapper>

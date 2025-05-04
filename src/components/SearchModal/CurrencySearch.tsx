@@ -186,8 +186,8 @@ export function CurrencySearch({
             {({ height }) => (
               <CurrencyList
                 height={height}
-                currencies={searchCurrencies}
                 otherListTokens={filteredInactiveTokens}
+                currencies={searchCurrencies}
                 onCurrencySelect={handleCurrencySelect}
                 otherCurrency={otherSelectedCurrency}
                 selectedCurrency={selectedCurrency}

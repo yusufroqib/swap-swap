@@ -28,11 +28,11 @@ const StyledCardLogo = styled.img`
 
 export const MORE_CARDS = [
   {
-    to: '/whatishorswap',
-    title: 'Horswap?',
+    to: '/whatiszentraswap',
+    title: 'Zentraswap?',
     description: 'Read more about this censorship resistant and privacy protecting Uniswap Interface.',
-    lightIcon: <StyledCardLogo src={hors} alt="What is Horswap?" />,
-    darkIcon: <StyledCardLogo src={hors} alt="What is Horswap?" />,
+    lightIcon: <StyledCardLogo src={hors} alt="What is Zentraswap?" />,
+    darkIcon: <StyledCardLogo src={hors} alt="What is Zentraswap?" />,
     cta: 'Read more',
   },
   {
@@ -46,10 +46,10 @@ export const MORE_CARDS = [
   {
     to: 'https://docs.uniswap.org',
     external: true,
-    title: 'Build dApps',
-    description: 'Build apps and tools on the largest DeFi protocol on Ethereum.',
+    title: 'Launch your tokens?',
+    description: 'Create and launch your own tokens effortlessly with our no-code token launchpad.',
     lightIcon: <Terminal color={lightTheme.neutral3} size={48} />,
     darkIcon: <StyledCardLogo src={darkTerminalImgSrc} alt="Developers" />,
-    cta: 'Developer docs',
+    cta: 'Launch now!',
   },
 ]

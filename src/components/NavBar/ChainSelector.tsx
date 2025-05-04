@@ -57,7 +57,8 @@ export const ChainSelector = ({ leftAlign }: ChainSelectorProps) => {
         },
         { supported: [], unsupported: [] } as Record<string, ChainId[]>
       )
-    return [supported, unsupported]
+    // return [supported, unsupported] //@note //TODO: Needs to visit this again
+    return [[ChainId.PHAROS_DEVNET, ChainId.CELO_ALFAJORES], []]
   }, [showTestnets, walletSupportsChain])
 
   // console.log('supportedChains', supportedChains)

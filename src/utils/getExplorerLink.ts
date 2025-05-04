@@ -56,6 +56,19 @@ export function getExplorerLink(chainId: number, data: string, type: ExplorerDat
         return `https://goerli.arbiscan.io/`
     }
   }
+  if (chainId === ChainId.PHAROS_DEVNET) {
+    switch (type) {
+      case ExplorerDataType.TRANSACTION:
+        return `https://pharosscan.xyz/tx/${data}`
+      case ExplorerDataType.ADDRESS:
+      case ExplorerDataType.TOKEN:
+        return `https://pharosscan.xyz/address/${data}`
+      case ExplorerDataType.BLOCK:
+        return `https://pharosscan.xyz/block/${data}`
+      default:
+        return `https://pharosscan.xyz/`
+    }
+  }
 
   const prefix = BLOCK_EXPLORER_PREFIXES[chainId] ?? 'https://etherscan.io'
 

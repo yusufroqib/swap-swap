@@ -12,10 +12,10 @@ const MigrateV2 = lazy(() => import('pages/MigrateV2'))
 const MigrateV2Pair = lazy(() => import('pages/MigrateV2/MigrateV2Pair'))
 const NotFound = lazy(() => import('pages/NotFound'))
 const Pool = lazy(() => import('pages/Pool'))
-const WhatIsHorswap = lazy(() => import('pages/WhatIsHorswap'))
+const WhatIsZentraswap = lazy(() => import('pages/WhatIsZentraswap'))
 const PositionPage = lazy(() => import('pages/Pool/PositionPage'))
 const PoolV2 = lazy(() => import('pages/Pool/v2'))
-const PoolFinder = lazy(() => import('pages/PoolFinder'))
+const PoolFinder = lazy(() => import('pages/PoolFinder')) 
 const RemoveLiquidity = lazy(() => import('pages/RemoveLiquidity'))
 const RemoveLiquidityV3 = lazy(() => import('pages/RemoveLiquidity/V3'))
 
@@ -75,7 +75,7 @@ export const routes: RouteDefinition[] = [
   createRouteDefinition({ path: '/pools/v2', getElement: () => <PoolV2 /> }),
   createRouteDefinition({ path: '/pools', getElement: () => <Pool /> }),
   createRouteDefinition({ path: '/pools/:tokenId', getElement: () => <PositionPage /> }),
-  createRouteDefinition({ path: '/whatishorswap', getElement: () => <WhatIsHorswap /> }),
+  createRouteDefinition({ path: '/whatiszentraswap', getElement: () => <WhatIsZentraswap /> }),
   createRouteDefinition({
     path: '/add/v2',
     nestedPaths: [':currencyIdA', ':currencyIdA/:currencyIdB'],

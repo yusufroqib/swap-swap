@@ -397,8 +397,8 @@ export default function Landing() {
             <Card {...card} icon={isDarkMode ? darkIcon : lightIcon} key={card.title} type={CardType.Secondary} />
           ))}
         </CardGrid>
-        <ProtocolBanner />
-        <AboutFooter />
+        {/* <ProtocolBanner /> */}
+        {/* <AboutFooter /> */}
       </AboutContentContainer>
     </PageContainer>
   )

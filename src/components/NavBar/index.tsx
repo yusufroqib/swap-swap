@@ -43,6 +43,22 @@ const MenuItem = ({ href, dataTestId, id, isActive, children }: MenuItemProps) =
     </NavLink>
   )
 }
+const Launchpad = ({ href, dataTestId, id, isActive, children }: MenuItemProps) => {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={isActive ? styles.activeMenuItem : styles.menuItem}
+      id={id}
+      style={{ textDecoration: 'none', overflow: 'hidden', whiteSpace: 'nowrap' }}
+      data-testid={dataTestId}
+    >
+      {children}
+    </a>
+  )
+}
+
 
 export const PageTabs = () => {
   const { pathname } = useLocation()
@@ -57,6 +73,9 @@ export const PageTabs = () => {
       <MenuItem href="/pools" dataTestId="pool-nav-link" isActive={isPoolActive}>
         <Trans>Pools</Trans>
       </MenuItem>
+      <Launchpad href="https://google.com" dataTestId="pool-nav-link" isActive={false}>
+        <Trans>Launchpad 🚀</Trans>
+      </Launchpad>
       <MenuItem href="/whatishorswap">
         <Trans>What is Horswap?</Trans>
       </MenuItem>
