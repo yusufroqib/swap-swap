@@ -1,48 +1,108 @@
-# Horswap
+# Zentra: DeFi Launchpad & Swap Platform
 
-An open source interface for Uniswap -- a protocol for decentralized exchange of Ethereum tokens.
+## Project Description
+
+Zentra is an innovative DeFi ecosystem powering the future of token launches on the Pharos blockchain. Our comprehensive platform empowers projects with enterprise-grade tools for seamless token creation, fair launches, and efficient liquidity management. The ecosystem features two synergistic components:
+
+1. **Zentra Launchpad**: An advanced token launching platform that enables projects to effortlessly create and deploy customizable tokens with robust features, transparent launch mechanisms, and enhanced security controls.
+
+2. **Zentra Swap**: A high-performance decentralized exchange (DEX) optimized for the Pharos network, providing frictionless trading for all tokens launched through our platform with intuitive user experience.
 
 <img src="screenshot.png" style="width: 500px" />
 
-Check out Horswap via:
-- [https://2.horswap.eth.limo](https://2.horswap.eth.limo)
-- [ipns://2.horswap.eth](ipns://2.horswap.eth)
-- [ipfs://bafybeibtdjzmhx77pxlpmy7fqnwyb7dmrtwbk3n6fpyw3qdgmxaznzwm44](ipfs://bafybeibtdjzmhx77pxlpmy7fqnwyb7dmrtwbk3n6fpyw3qdgmxaznzwm44)
+### Core Value Proposition
 
-# Horswap is an improved Uniswap Interface
-Horswap is a fork of [Uniswap Interface v4.266.2](https://github.com/Uniswap/interface/releases/tag/v4.266.2). The version v4.266.2 is the last version without added UI fees and that would still allow users to do local routing. Horswap has then significantly improved the interface's censorship resistance and privacy.
+As an early infrastructure provider for the promising Pharos ecosystem, Zentra delivers essential DeFi primitives that unlock the full potential of this innovative blockchain. Our platform offers:
 
-You can read about reasoning on why Horswap was built here: [https://listed.to/authors/33689/posts/49312](https://listed.to/authors/33689/posts/49312)
+- Sophisticated token creation with multiple customizable token types
+- Transparent and equitable launch mechanisms for fair distribution
+- Advanced liquidity provision and management solutions
+- Seamless trading experience through an optimized interface
 
-Here are the significant changes:
-- Changed Uniswap branding to Horswap branding
-- Removed Uniswap privacy policy
-- Removed all analytics queries (Uniswap interface is really noisy in reporting everything you do to their analytics system)
-- Removed support for wallet connect wallets (Unfortunately these require centralized server to function)
-- Changed socials to point to dark.florist equivalents
-- Removed copyright notices for Uniswap
-- Removed blacklisted tokens and user addresses
-- Replaced the default RPC (Infura, which censors) with Keydonix (does not censor)
-- Removed Moonpay (a centralized fiat payment processsor)
-- Removed NFT related features (unfortunately these only function by using centralized services)
-- Removed Subgraph (unfortunately this is also a centralized service)
-- Removed pages that require subgraph (mini portfolio, portfolio, NFTs, token pages, pool details, search bar etc)
-- Removed fiat currency selector (requires subgraph)
-- Removed external routing, all routing is done using the default RPC or users wallet RPC
-- Removed UniswapX (UniswapX depends on centralized servers)
-- Settings have been moved to where the mini portfolio used to be
-- Changed token pricing to be from a simulated swap with USDC, and it is shown to users that this is in USDC (not in dollars)
-- Removed claim UNI tokens popup
-- Added docker building and deployment to IPFS
+## Technical Foundation
 
-You can see all the changes by [comparing Horseswap to Uniswap Interface V4.266.2](https://github.com/Uniswap/interface/compare/v4.266.2...DarkFlorist:Horswap:main)
+Zentra Swap is built on the robust foundation of Uniswap Interface v4.266.2, the last version without added UI fees and that still allows users to do local routing. We've significantly improved the interface's censorship resistance and privacy while maintaining its core functionality.
 
-# Socials
-- Website: [dark.florist](https://www.dark.florist/)
-- Uniswap Docs: [uniswap.org/docs/](https://docs.uniswap.org/)
-- Twitter: [@DarkFlorist](https://twitter.com/DarkFlorist)
-- Discord: [Dark Florists](https://discord.com/invite/aCSKcvf5VW)
-- Uniswap Whitepapers:
-  - V1 ipfs://bafybeihyq5jjttgmfdsonnbv73cshadkd3c3m3dptcrhqjeds6xij6rlim/ [dweb](https://bafybeihyq5jjttgmfdsonnbv73cshadkd3c3m3dptcrhqjeds6xij6rlim.ipfs.dweb.link/)
-  - V2 ipfs://bafybeia5cxs72meianwphz2aq2tv5irpdgmkfniqsuhznl66s677zakgce/ [dweb](https://bafybeia5cxs72meianwphz2aq2tv5irpdgmkfniqsuhznl66s677zakgce.ipfs.dweb.link/)
-  - V3 ipfs://bafybeifgsqhf44fqxz4fnhomgwxy3666vrat2zu4djs5rgvjopatcfe42y/ [dweb](https://bafybeifgsqhf44fqxz4fnhomgwxy3666vrat2zu4djs5rgvjopatcfe42y.ipfs.dweb.link/)
+### Key Technical Improvements
+
+- Enhanced censorship resistance and privacy
+- Removed centralized dependencies
+- Optimized for Pharos blockchain
+- Improved security and transparency
+- Streamlined user experience
+
+## Technical Architecture
+
+### Smart Contract System
+
+Zentra's architecture consists of modular smart contracts that handle different aspects of the ecosystem:
+
+- **Token System**: Handles token creation, management, and features
+- **Launch System**: Manages fair token launches with security controls
+- **Pool Factory**: Facilitates liquidity pool creation and management
+- **Swap Router**: Enables token swapping with optimized routing
+
+### Security Mechanisms
+
+- Multiple contract types for different security levels
+- Emergency pause functionality
+- Admin controls
+- Audit trails
+- Transaction limits
+- Fee management
+
+## Features
+
+### Token Creation
+- Basic Token (standard ERC20)
+- Tax Token (with buy/sell tax features)
+- Advanced Token (with additional features like rewards distribution)
+
+### Launch System
+- Fair launch with timestamp-based events
+- User claim functionality
+- Volume tracking and security features
+
+### Swap Interface
+- Liquidity provision
+- Token swapping
+- Path optimization
+- Local routing
+- Gas optimization
+
+## Future Roadmap
+
+1. **Complete Mainnet Launch**: Transition from devnet to mainnet once Pharos is live
+2. **Expand Token Features**: Add more customization options for token creators
+3. **Implement Governance**: Add community governance for the Zentra ecosystem
+4. **Add Advanced Trading Features**: Limit orders, charting, and analytics
+5. **Develop Project Incubation**: Provide additional support for promising projects
+
+## Technical Details
+
+### Smart Contract Architecture
+
+1. **Token Contracts**:
+   - Basic ERC20 implementation
+   - Tax token with configurable buy/sell fees
+   - Advanced token with additional features like rewards distribution
+
+2. **Launch Contracts**:
+   - Fair launch with timestamp-based events
+   - User claim functionality
+   - Volume tracking and security features
+
+3. **Pool Factory**:
+   - Pool creation and management
+   - Admin controls and fee collection
+   - Security mechanisms
+
+4. **Swap Router**:
+   - Liquidity provision
+   - Token swapping
+   - Path optimization
+
+
+## Conclusion
+
+Zentra provides essential DeFi infrastructure for the Pharos ecosystem, enabling projects to launch, gain liquidity, and trade seamlessly. By addressing the fundamental needs of a new blockchain network, we've created a foundation that can help drive adoption and success for the entire Pharos ecosystem.

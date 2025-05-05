@@ -155,7 +155,7 @@ export const MenuDropdown = () => {
                 </SecondaryLinkedText>
               </Box> */}
 							<IconRow>
-								<Icon href="https://discord.com/invite/aCSKcvf5VW">
+								{/* <Icon href="https://discord.com/invite/aCSKcvf5VW">
 									<DiscordIconMenu
 										className={styles.hover}
 										width={24}
@@ -170,8 +170,8 @@ export const MenuDropdown = () => {
 										height={24}
 										color={themeVars.colors.neutral2}
 									/>
-								</Icon>
-								<Icon href="https://github.com/DarkFlorist/Horswap">
+								</Icon> */}
+								<Icon href="https://github.com/Zentra-Finance">
 									<GithubIconMenu
 										className={styles.hover}
 										width={24}
