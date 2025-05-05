@@ -12,7 +12,7 @@ export const MAIN_CARDS = [
   {
     to: '/swap',
     title: 'Swap tokens',
-    description: 'Buy, sell, and explore tokens on Ethereum, Polygon, Optimism, and more.',
+    description: 'Buy, sell, and explore tokens on Pharos Network.',
     cta: 'Trade Tokens',
     darkBackgroundImgSrc: swapCardImgSrc,
     lightBackgroundImgSrc: swapCardImgSrc,
@@ -28,9 +28,9 @@ const StyledCardLogo = styled.img`
 
 export const MORE_CARDS = [
   {
-    to: '/whatiszentraswap',
+    to: '/WhatIsZentraswap',
     title: 'Zentraswap?',
-    description: 'Read more about this censorship resistant and privacy protecting Uniswap Interface.',
+    description: 'Read more about this high-capital efficiency, AMM-based DEX and launchpad built to support the Pharos Network ecosystem.',
     lightIcon: <StyledCardLogo src={hors} alt="What is Zentraswap?" />,
     darkIcon: <StyledCardLogo src={hors} alt="What is Zentraswap?" />,
     cta: 'Read more',
@@ -44,10 +44,10 @@ export const MORE_CARDS = [
     cta: 'Provide liquidity',
   },
   {
-    to: 'https://docs.uniswap.org',
+    to: 'https://zentrafi.vercel.app/',
     external: true,
     title: 'Launch your tokens?',
-    description: 'Create and launch your own tokens effortlessly with our no-code token launchpad.',
+    description: 'Create, launch and raise funds for your tokens effortlessly with our no-code token launchpad.',
     lightIcon: <Terminal color={lightTheme.neutral3} size={48} />,
     darkIcon: <StyledCardLogo src={darkTerminalImgSrc} alt="Developers" />,
     cta: 'Launch now!',

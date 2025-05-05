@@ -1,82 +1,118 @@
-import { Trans } from '@lingui/macro'
-import { SmallButtonPrimary } from 'components/Button'
-import { AutoColumn } from 'components/Column'
-import { useIsMobile } from 'nft/hooks'
-import ReactMarkdown from 'react-markdown'
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
-import { ThemedText } from 'theme/components'
+import { Trans } from "@lingui/macro";
+import { SmallButtonPrimary } from "components/Button";
+import { AutoColumn } from "components/Column";
+import { useIsMobile } from "nft/hooks";
+import ReactMarkdown from "react-markdown";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import { ThemedText } from "theme/components";
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+`;
 
 const Header = styled(Container)`
-  gap: 30px;
-`
+	gap: 30px;
+`;
 
 const PageWrapper = styled(Container)`
-  flex: 1;
-  justify-content: center;
-  gap: 50px;
-  padding: 10px;
+	flex: 1;
+	justify-content: center;
+	gap: 50px;
+	padding: 10px;
 
-  @media screen and (min-width: ${({ theme }) => theme.breakpoint.md}px) {
-    justify-content: space-between;
-    padding-top: 64px;
-  }
-`
+	@media screen and (min-width: ${({ theme }) => theme.breakpoint.md}px) {
+		justify-content: space-between;
+		padding-top: 64px;
+	}
+`;
 const MarkDownWrapper = styled.div`
-  max-width: 1024px;
-  overflow: hidden;
-`
+	max-width: 1024px;
+	overflow: hidden;
+`;
 
 export default function WhatIsZentraswap() {
-  const Title = useIsMobile() ? ThemedText.LargeHeader : ThemedText.Hero
-  return (
-    <PageWrapper>
-      <Header>
-        <Container> 
-          <Title>What is Zentraswap?</Title>
-        </Container>
-      </Header>
-      <AutoColumn gap="md">
-        <MarkDownWrapper>
-          <ReactMarkdown
-            source={`# Zentraswap is an improved Uniswap Interface
-Zentraswap is a fork of [Uniswap Interface v4.266.2](https://github.com/Uniswap/interface/releases/tag/v4.266.2). The version v4.266.2 is the last version without added UI fees and that would still allow users to do local routing. Zentraswap has then significantly improved the interface's censorship resistance and privacy.
+	const Title = useIsMobile() ? ThemedText.LargeHeader : ThemedText.Hero;
+	return (
+		<PageWrapper>
+			<Header>
+				<Container>
+					<Title>What is Zentraswap?</Title>
+				</Container>
+			</Header>
+			<AutoColumn gap="md">
+				<MarkDownWrapper>
+					<ReactMarkdown
+						source={`## What is Zentraswap?
 
-Here are the significant changes:
-- Changed Uniswap branding to Zentraswap branding
-- Removed Uniswap privacy policy
-- Removed all analytics queries (Uniswap interface is really noisy in reporting everything you do to their analytics system)
-- Removed support for wallet connect wallets (Unfortunately these require centralized server to function)
-- Changed socials to point to dark.florist equivalents
-- Removed copyright notices for Uniswap
-- Removed blacklisted tokens and user addresses
-- Replaced the default RPC (Infura, which censors) with Keydonix (does not censor)
-- Removed Moonpay (a centralized fiat payment processsor)
-- Removed NFT related features (unfortunately these only function by using centralized services)
-- Removed Subgraph (unfortunately this is also a centralized service)
-- Removed pages that require subgraph (mini portfolio, portfolio, NFTs, token pages, pool details, search bar etc)
-- Removed fiat currency selector (requires subgraph)
-- Removed external routing, all routing is done using the default RPC or users wallet RPC
-- Removed UniswapX (UniswapX depends on centralized servers)
-- Settings have been moved to where the mini portfolio used to be
-- Changed token pricing to be from a simulated swap with USDC, and it is shown to users that this is in USDC (not in dollars)
-- Removed claim UNI tokens popup
-- Added docker building and deployment to IPFS
+**Zentraswap** is a decentralized exchange (DEX) built on the **Pharos network**, designed to enable secure, permissionless, and efficient trading of digital assets. As a hybrid fork of **Uniswap V2 and V3**, Zentraswap offers both classic liquidity pools and concentrated liquidity capabilities — empowering traders and liquidity providers with flexibility and capital efficiency.
 
-You can see all the changes by [comparing Zentraswap to Uniswap Interface V4.266.2](https://github.com/Uniswap/interface/compare/v4.266.2...DarkFlorist:Zentraswap:main). You can also find the whole codebase in [GitHub](https://github.com/DarkFlorist/Zentraswap/).
-					`.replace(/[\n\r]/g, '\n')}
-          />
-        </MarkDownWrapper>
-      </AutoColumn>
-      <SmallButtonPrimary as={Link} to="/">
-        <Trans>Back to swapping!</Trans>
-      </SmallButtonPrimary>
-    </PageWrapper>
-  )
+Zentraswap is one of several products being developed under the same protocol, with each product designed to serve a specific function within the broader DeFi ecosystem on Pharos.
+
+---
+
+### ⚡ Built for Performance on Pharos
+
+* **Low-Cost & High-Speed:** Leveraging Pharos’s performance-focused architecture, Zentraswap delivers fast, low-fee transactions.
+* **Smart Routing:** Zentraswap features a built-in **Smart Router** that dynamically finds the best trade path across available pools, ensuring users always get the most favorable price with minimal slippage.
+* **Dual Liquidity Models:** LPs can choose between simple 50/50 V2 pools or advanced V3 pools with custom price ranges and multiple fee tiers.
+
+---
+
+### 🔗 Ecosystem-Aware, Interoperable by Design
+
+Zentraswap is a standalone DEX — but it doesn’t operate in isolation. It integrates seamlessly with other products in the same protocol, including our **Launchpad**, [Zentra](https://zentrafi.vercel.app/).
+
+This allows tokens launched on the Launchpad to:
+
+* Migrate liquidity to Zentraswap after hitting their launch targets
+* Become instantly tradable on a decentralized exchange
+* Leverage Zentraswap’s deep liquidity and smart routing from day one
+
+The two systems are distinct but interoperable, built to strengthen the Pharos DeFi ecosystem together.
+
+---
+
+### 💧 For Liquidity Providers
+
+* **Earn trading fees** from every swap in your pool
+* **Choose your strategy:** Passive LPing via V2 or precision control via V3
+* **Select your fee tier:** Optimize for volatility and trading volume
+
+---
+
+### 🔥 Why Zentraswap?
+
+* **Decentralized & Non-Custodial:** You stay in control of your assets at all times
+* **Optimized Trades:** Smart Router delivers the best execution path
+* **Pharos-native:** Runs on a high-performance chain built for scalable DeFi
+* **Ecosystem-Friendly:** Built to plug into wallets, dApps, launchpads, and more
+* **Open and Evolving:** Part of a protocol committed to expanding the decentralized future
+
+---
+
+### 🚀 Zentraswap Is For:
+
+* Traders looking for fast, low-slippage swaps
+* LPs seeking efficient, customizable yield strategies
+* Projects needing reliable secondary liquidity
+* Developers building on the Pharos chain
+* Users participating in a larger decentralized protocol ecosystem
+
+---
+
+Zentraswap is more than just a swap — it's the core trading layer of a broader vision for decentralized finance on Pharos.
+
+---
+`.replace(/[\n\r]/g, "\n")}
+					/>
+				</MarkDownWrapper>
+			</AutoColumn>
+			<SmallButtonPrimary as={Link} to="/">
+				<Trans>Back to swapping!</Trans>
+			</SmallButtonPrimary>
+		</PageWrapper>
+	);
 }
