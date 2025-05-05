@@ -43,7 +43,7 @@ const MenuItem = ({ href, dataTestId, id, isActive, children }: MenuItemProps) =
     </NavLink>
   )
 }
-const Launchpad = ({ href, dataTestId, id, isActive, children }: MenuItemProps) => {
+const ExternalLInk = ({ href, dataTestId, id, isActive, children }: MenuItemProps) => {
   return (
     <a
       href={href}
@@ -73,11 +73,11 @@ export const PageTabs = () => {
       <MenuItem href="/pools" dataTestId="pool-nav-link" isActive={isPoolActive}>
         <Trans>Pools</Trans>
       </MenuItem>
-      <Launchpad href="https://zentrafi.vercel.app/" dataTestId="pool-nav-link" isActive={false}>
+      <ExternalLInk href="https://zentrafi.vercel.app/" dataTestId="pool-nav-link" isActive={false}>
         <Trans>Launchpad 🚀</Trans>
-      </Launchpad>
-      <MenuItem href="https://zentrafi.vercel.app/" dataTestId="pool-nav-link" isActive={false}>
-        <Trans>What is Zentra?</Trans>
+      </ExternalLInk>
+      <MenuItem href="/WhatIsZentraswap" dataTestId="pool-nav-link" isActive={false}>
+        <Trans>What is Zentraswap?</Trans>
       </MenuItem>
       <Box marginY="4">
         <MenuDropdown />
